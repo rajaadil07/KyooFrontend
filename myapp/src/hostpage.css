@@ -1,0 +1,77 @@
+.main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/kyoobackground.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .test{
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 50PX;
+  }
+
+  .category{
+    justify-content: flex-start;
+    font-family:  'Montserrat', sans-serif;
+    color: white;
+    font-weight: 200;
+  }
+
+  input[type="text"] {
+    width: 350px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 20px; /* Add rounded corners */
+    padding: 5px; /* Add padding to the input */
+    font-size: 20px; /* Adjust the font size */
+    color: white; /* Text color */
+    background-color: grey; /* Background color */
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    
+  }
+
+  .hostGoButton{
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    font-family: 'Space Grotesk', sans-serif;;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+  }
+
+  .backToSignIn {
+    position: absolute; /* Set to relative here */
+    top: 4%;
+    left: 4%;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none;
+  }
+  
+  .backToSignIn::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Initial position - from the left */
+    right: 100%; /* Initially hidden on the left */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #FFD8BE; /* Color of the line */
+    transition: right 0.3s; /* Transition the right property */
+  }
+  
+  /* Update the hover effect to reveal the line from left to right */
+  .backToSignIn:hover::before {
+    right: 0; /* Show the line from left to right on hover */
+  }
