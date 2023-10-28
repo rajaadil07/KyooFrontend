@@ -1,7 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './landingpage';
-import HostPage from './hostpage';
+import React from 'react'
+import Home from './screens/home'
+import SupportScreen from "./SupportScreen"
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+
+
 import YourKyoo from './yourkyoo'
 
 function App() {
@@ -16,6 +18,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
-
