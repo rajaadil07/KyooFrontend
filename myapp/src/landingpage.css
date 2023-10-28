@@ -6,10 +6,10 @@
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
-    background-image: url('images/kyoobackground.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-image: url('./images/kyoobackground.jpg');
   }
   
   .kyooLogo {
@@ -17,7 +17,18 @@
     font-size: 125px;
     color: white;
     margin-bottom: 1px;
-  }
+    position: relative;
+    animation: floatUpDown 2s ease-in-out infinite; 
+}
+
+@keyframes floatUpDown {
+    0%, 100% {
+        transform: translateY(0px); /* Start and end position (no movement) */
+    }
+    50% {
+        transform: translateY(-20px); /* Middle position (move up) */
+    }
+}
   
   .loadingSubtext {
     font-family: 'Noto Sans Kawi', sans-serif;
