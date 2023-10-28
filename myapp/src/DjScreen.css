@@ -1,0 +1,48 @@
+.djScreenWrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.djSidebar {
+    background-color: #343a40;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.djSidebar a {
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.djSidebar a:hover {
+    transform: scale(1.1);
+}
+
+.markIcon {
+    position: absolute;
+    bottom: 10px;
+}
+
+.submitBtn {
+    margin-top: 20px;
+    background-color: #343a40;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: #495057;
+}
+
+.displayData {
+    margin-top: 20px;
+}
+
+.djMainContent {
+    flex: 1;
+    padding: 40px;
+}
