@@ -1,0 +1,70 @@
+/* landingpage.css */
+.main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/kyoobackground.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .kyooLogo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 125px;
+    color: white;
+    margin-bottom: 1px;
+  }
+  
+  .loadingSubtext {
+    font-family: 'Noto Sans Kawi', sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+
+  input[type="text"] {
+    width: 250px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 5px; /* Add padding to the input */
+    font-size: 20px; /* Adjust the font size */
+    color: white; /* Text color */
+    background-color: grey; /* Background color */
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    
+  }
+
+  .goButton{
+    margin-top: 20px;
+    width: 270px;
+    height: 50px;
+    font-family: 'Space Grotesk', sans-serif;;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+  }
+
+  .goButton:hover{
+    background-color: black;
+    color: white;
+    
+  }
+
+  .forHost{
+    font-size: 15px;
+    margin-top: 15%;
+    color: white;
+  }
+
+  a{
+    color: white;
+  }
+
+  
