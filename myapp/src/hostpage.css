@@ -26,7 +26,7 @@
   }
 
   input[type="text"] {
-    width: 350px; /* Adjust the width as needed */
+    width: 400px; /* Adjust the width as needed */
     height: 40px; /* Adjust the height as needed */
     border: 2px solid #ccc; /* Add a border */
     border-radius: 20px; /* Add rounded corners */
@@ -75,3 +75,11 @@
   .backToSignIn:hover::before {
     right: 0; /* Show the line from left to right on hover */
   }
+
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the items horizontally */
+    width: 100%; /* Use 100% of the parent width */
+    margin-bottom: 10px; /* Optional: Adds a bit of space between input groups */
+}

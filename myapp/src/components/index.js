@@ -17,9 +17,9 @@ export default function Sidebar() {
          alt="profile"
         />
         <div>
-          <SidebarButton title="Trending" to="/trending" icon={<FaGripfire />} />
-          <SidebarButton title="Player" to="/player" icon={<FaPlay />} />
-          <SidebarButton title ="Help" to="/favorites" icon={<MdFavorite />} />
+          <SidebarButton title="Trending" to="/home/trending" icon={<FaGripfire />} />
+          <SidebarButton title="Player" to="/home/player" icon={<FaPlay />} />
+          <SidebarButton title ="Help" to="/home/favorites" icon={<MdFavorite />} />
         </div>
         <SidebarButton title="Sign Out" to="" icon={<FaSignOutAlt />} />
 
