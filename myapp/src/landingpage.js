@@ -21,7 +21,10 @@ const LandingPage = () => {
           value={textInput}
           onChange={handleInputChange}
         />
-        <button className="goButton">Get the party started!</button>
+        <Link to="/home">
+          <button className="goButton">Get the party started!</button>
+        </Link>
+        
         <h2 className="forHost">
           Hosting an event? Click <Link to="/hostpage">here</Link> to create a Kyoo.
         </h2>

@@ -1,20 +1,22 @@
-import React from 'react'
-import Home from './screens/home'
-import SupportScreen from "./SupportScreen"
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-
-
-import YourKyoo from './yourkyoo'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './screens/home/home';
+import LandingPage from './landingpage';
+import HostPage from './hostpage';
+import YourKyoo from './yourkyoo';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path = "/yourkyoo" element={<YourKyoo/>} /> 
+        <Route path="/yourkyoo" element={<YourKyoo />} /> 
         <Route path="/hostpage" element={<HostPage />} />
-        <Route path="/" element={<LandingPage />} /> 
+        <Route path="/" element={<LandingPage />} />
         <Route path="/landingpage" element={<LandingPage />} />
+        <Route path="/home/*" element={<Home />} />
       </Routes>
     </Router>
   );
 }
+
+export default App;
