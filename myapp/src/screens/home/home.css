@@ -1,7 +1,44 @@
 .main-body{
     height:100vh;
     width: 100vw;
-    background-color: #48494B;
     border-radius: 30px;
     display: flex;
+    position: relative;
+    background-image: url('../../images/kyoobackground.jpg');
+
+
 }
+
+.content-container {
+    flex: 1;  /* Allow this container to take up remaining horizontal space */
+    padding-top: 100px;  /* Push content down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song-card-container {
+    width: 100%;
+    max-width: 700px; /* Increased from 600px to 700px */
+    margin-top: 50px;
+    margin-left: 310px; /* Added to ensure centering */
+    margin-right: auto; /* Added to ensure centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.songCard-body {
+    width: 100%;       
+    max-width: 700px;  /* Increased from 600px to 700px */
+    height: 60px;      
+    padding: 5px 15px; 
+    background-color: #27354D;
+    border-radius: 10px; 
+    border-bottom-right-radius: 0px;
+    display: flex;       
+    justify-content: space-between; 
+    align-items: center;  
+    margin: 20px auto;  /* Keeps the card centered horizontally */
+}
+

@@ -1,81 +1,102 @@
 /* landingpage.css */
 .main {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url('./images/kyoobackground.jpg');
-  }
-  
-  .kyooLogo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 125px;
-    color: white;
-    margin-bottom: 1px;
-    position: relative;
-    animation: floatUpDown 2s ease-in-out infinite; 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('./images/kyoobackground.jpg');
+}
+
+.kyooLogo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 125px;
+  color: white;
+  margin-bottom: 0;
+  position: relative;
+  animation: floatUpDown 2s ease-in-out infinite; 
 }
 
 @keyframes floatUpDown {
-    0%, 100% {
-        transform: translateY(0px); /* Start and end position (no movement) */
-    }
-    50% {
-        transform: translateY(-20px); /* Middle position (move up) */
-    }
+  0%, 100% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
 }
-  
-  .loadingSubtext {
-    font-family: 'Noto Sans Kawi', sans-serif;
-    font-weight: 600;
-    color: white;
-  }
 
-  input[type="text"] {
-    width: 250px; /* Adjust the width as needed */
-    height: 40px; /* Adjust the height as needed */
-    border: 2px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Add rounded corners */
-    padding: 5px; /* Add padding to the input */
-    font-size: 20px; /* Adjust the font size */
-    color: white; /* Text color */
-    background-color: grey; /* Background color */
-    font-family: 'Space Grotesk', sans-serif;
-    text-align: center;
-    
-  }
+.loadingSubtext {
+  font-family: 'Noto Sans Kawi', sans-serif;
+  font-weight: 600;
+  color: white;
+}
 
-  .goButton{
-    margin-top: 20px;
-    width: 270px;
-    height: 50px;
-    font-family: 'Space Grotesk', sans-serif;;
-    font-size: 20px;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    transition: 0.3s;
-  }
+input[type="text"] {
+  width: 250px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: grey;
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+}
 
-  .goButton:hover{
-    background-color: black;
-    color: white;
-    
-  }
+/* New placeholder styling */
+input[type="text"]::placeholder {
+  color: white;
+}
 
-  .forHost{
-    font-size: 15px;
-    margin-top: 15%;
-    color: white;
-  }
+.goButton{
+  margin-top: 20px;
+  width: 270px;
+  height: 50px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
 
-  a{
-    color: white;
-  }
+.goButton:hover{
+  background-color: black;
+  color: white;
+}
 
-  
+.forHost{
+  font-size: 15px;
+  margin-top: 5%;
+  color: white;
+}
+
+a{
+  color: white;
+}
+
+.joinEventButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.joinEventButton:hover {
+  background-color: #45a049;
+}
+
